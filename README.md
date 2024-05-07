@@ -135,7 +135,27 @@ Ingresa tu movimiento: 7
 Editor de texto que soporte Python
 
 ## :loudspeaker: Solución
-:construction: Pronto :construction:
+Funciones usadas:
+- **display_board(board)**
+  
+    Muestra el estado actual del tablero.
+  
+- **make_list_of_free_fields(board)**
+  
+    Examina el tablero y construye una lista de todos los cuadros vacíos. La lista es una lista de tuplas con los índices de filas y columnas.
+  
+- **draw_move(board)**
+  
+    Dibuja el movimiento de la máquina y actualiza el tablero.
+  
+- **victory_for(board, sign)**
+  
+    Analiza el estado del tablero y verifica si *sign* ("O" o "X") formó línea.
+
+- **Main**
+
+    Dentro de un loop con la cantidad de turnos para que se llene el tablero, pregunta si el índice es par o impar para saber a quién le toca el turno (computadora o jugador).
+    Con cada movimiento, pregunta si el último que movió ganó. Si se sale del for, y nadie ganó (win=false) significa que empataron.
 
 ## ✒️ Autor
 * **Cristian Muñoz** - [crismkle](https://github.com/crismkle)
